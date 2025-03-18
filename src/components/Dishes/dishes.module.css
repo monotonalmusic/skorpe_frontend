@@ -1,0 +1,13 @@
+.dishesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.dishesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,15 @@
+.dishCard {
+    width: 125px;
+    height: 125px;
+    background-color: none;
+    border: none;
+}
+
+.button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 40%;
+}

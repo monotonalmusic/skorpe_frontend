@@ -1,0 +1,64 @@
+/*
+
+
+    BASE ROOT STYLES
+
+
+*/
+
+:root {
+
+    line-height: 1.5;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    color: #213547;
+    background-color: #fff;
+   
+    font-family: var(--primary-font), 'sans-serif';
+   
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+
+  BASE ROOT ELEMENT STYLES
+
+*/
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+}
+
+body {
+ 
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--primary-font);
+  
+}
+
+.backoffice-pages {
+  display: flex;
+  flex-direction: column;
+  margin : 40px 0;
+  width: 100%;
+}
+
+
+a {
+  color : #000;
+  display: inline-block;
+}
+
+
+

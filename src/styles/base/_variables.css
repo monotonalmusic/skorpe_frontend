@@ -1,0 +1,15 @@
+:root {
+
+
+    /* --font-tillium: "Titillium Web"; */
+    --font-tillium: "Titillium Web";
+    --font-roboto: "Roboto";
+    --primary-font: var(--font-tillium);
+
+    --mc-color-green : #3a6465;
+    --mc-color-yellow : #e6a044;
+    --mc-color-orange : #ff6634;
+    
+    
+    
+}

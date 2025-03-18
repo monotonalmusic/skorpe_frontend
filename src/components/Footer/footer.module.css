@@ -1,0 +1,41 @@
+.footer {
+    height: 50vh;
+    position: relative;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgrey;
+
+    .iconContainer {
+        height: 25px;
+        width: 25px;
+    }
+    
+    svg {
+
+        height: 25px;
+        width: 25px;
+    }
+    .logo {
+        width: 40%;
+    }
+    p {
+        color: white;
+    }
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footerContactContainer, .footerAddressContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+

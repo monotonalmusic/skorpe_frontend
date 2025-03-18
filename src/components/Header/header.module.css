@@ -1,0 +1,5 @@
+.headerContainer {
+    height: 50vh;
+    background-image: url("/headerImg.png");
+    background-size: cover;
+}

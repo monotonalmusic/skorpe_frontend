@@ -1,0 +1,73 @@
+.dishDetailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f4f1;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.dishImage {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.dishInfo {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.dishTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ingredientsList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.ingredientsList li {
+    font-size: 16px;
+    color: #333;
+}
+
+.sizeSelector {
+    margin-bottom: 15px;
+}
+
+.selectBox {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 250px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.addToBasket {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.addToBasket:hover {
+    background-color: #555;
+}

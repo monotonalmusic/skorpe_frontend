@@ -1,0 +1,64 @@
+.basketContainer {
+    background-color: #f3f5f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  .emptyMessage {
+    text-align: center;
+    color: gray;
+  }
+
+  .basketUl {
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    padding: 0;
+  }
+  
+  .basketList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  .basketSummary {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .totalAmount {
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+  }
+  
+  .emailInput {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .checkoutButton {
+    width: 100%;
+    background-color: #4c8c2b;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .checkoutButton:hover {
+    background-color: #3e7423;
+  }
+
+
+  

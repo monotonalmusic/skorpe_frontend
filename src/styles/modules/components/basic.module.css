@@ -1,0 +1,10 @@
+.component {
+
+    width: 100vw;
+
+    .listItem{
+        background-color: aqua;
+        padding : 20px;
+    }
+
+}
