@@ -1,0 +1,19 @@
+.employeeListUl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.employeeListLi {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.employeeImage {
+    width: 150px;
+    height: 150px;
+}

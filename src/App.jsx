@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import BackOffice from "./pages/backoffice/Backoffice";
 import DishForm from "./components/DishForm/DishForm";
 import DishDetail from "./pages/dishdetail/DishDetail";
+import EmployeesPage from "./pages/employees/EmployeesPage";
 
 const App = () => {
   const location = useLocation();
@@ -23,6 +24,7 @@ const App = () => {
     { path: "/kontakt", element: <KontaktPage /> },
     {path: "/checkout", element: <CheckoutPage />},
     {path: "/dish/:id", element: <DishDetail />},
+    {path: "/employees", element: <EmployeesPage />},
     {
       path: "/backoffice",
       element: <BackOffice />, // Uses Outlet to handle nested routes

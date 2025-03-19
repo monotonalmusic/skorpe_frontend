@@ -1,5 +1,5 @@
 .footer {
-    height: 50vh;
+    height: 30vh;
     position: relative;
     bottom: 0;
     padding: 20px;
@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: darkgrey;
+    background-color: #4A4A4A;
 
     .iconContainer {
         height: 25px;

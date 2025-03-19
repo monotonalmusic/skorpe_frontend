@@ -37,16 +37,17 @@ const Navigation = () => {
     <div className={styles.navigation}>
       <div className={styles.navLeft}>
         <Link to={"/"}>
-          <img src="/logo.png" alt="" className={styles.logo}/>
+          <img src="/logo.png" alt="" className={styles.logo} />
         </Link>
       </div>
       <div className={styles.navRight}>
-        <div onClick={toggleNavigation}>{icons.FaBars}</div>
         <div className={styles.basketDiv}>
           <p className={styles.basketCount}>{uniqueItemCount}</p>
           <Link to={"/checkout"}>
-          <img src="/basket_icon.png" className={styles.basketIcon}></img></Link>
+            <img src="/basket_icon.png" className={styles.basketIcon}></img>
+          </Link>
         </div>
+        <div onClick={toggleNavigation}>{icons.FaBars}</div>
       </div>
 
       <div className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
@@ -57,6 +58,14 @@ const Navigation = () => {
         >
           Home
         </NavLink>
+
+        <NavLink
+          to={"/employees"}
+          className={({ isActive }) => (isActive ? styles.active : "")}
+          onClick={closeNavigation}
+        >
+          Personalet
+        </NavLink>
         <NavLink
           to={"/kontakt"}
           className={({ isActive }) => (isActive ? styles.active : "")}
@@ -65,25 +74,11 @@ const Navigation = () => {
           Kontakt
         </NavLink>
         <NavLink
-          to={"/om"}
+          to={"/checkout"}
           className={({ isActive }) => (isActive ? styles.active : "")}
           onClick={closeNavigation}
         >
-          Om
-        </NavLink>
-        <NavLink
-          to={"/services"}
-          className={({ isActive }) => (isActive ? styles.active : "")}
-          onClick={closeNavigation}
-        >
-          Services
-        </NavLink>
-        <NavLink
-          to={"/shop"}
-          className={({ isActive }) => (isActive ? styles.active : "")}
-          onClick={closeNavigation}
-        >
-          Shop
+          Kurv
         </NavLink>
       </div>
     </div>
