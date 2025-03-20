@@ -13,6 +13,7 @@ export default function Basket() {
         <p className={styles.emptyMessage}>Your basket is empty.</p>
       ) : (
         <>
+        <h1 className={styles.kurvText}>Din kurv</h1>
           <ul className={styles.basketUl}>
             {basket.map((item, index) => (
               <li key={`${item._id}-${item.selectedSize}-${index}`} className={styles.basketList}>
@@ -35,10 +36,9 @@ export default function Basket() {
                 ,-
               </span>
             </p>
-            <input
-              type="email"
-              placeholder="Din email"
-              className={styles.emailInput}
+            <textarea
+              placeholder="Kommentar til ordren"
+              className={styles.commentTextArea}
             />
             <button className={styles.checkoutButton}>Afgiv ordre</button>
           </div>
@@ -47,3 +47,4 @@ export default function Basket() {
     </div>
   );
 }
+
