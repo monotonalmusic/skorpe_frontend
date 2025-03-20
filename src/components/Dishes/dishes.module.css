@@ -5,6 +5,48 @@
     
 }
 
+.buttonContainer {
+    display: flex;
+}
+
+.sortButton {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.allButtonDiv {
+    background-image: url("/logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pizzaerButtonDiv {
+    background-image: url("http://localhost:3042/dishes/seed_royale.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.durumButtonDiv {
+    background-image: url("http://localhost:3042/dishes/seed_dynamite.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.indbagteButtonDiv {
+    background-image: url("http://localhost:3042/dishes/seed_galaxi.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 .dishesGrid {
     display: flex;
     flex-wrap: wrap;

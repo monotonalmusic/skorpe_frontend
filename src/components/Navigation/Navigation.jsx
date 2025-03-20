@@ -51,6 +51,9 @@ const Navigation = () => {
       </div>
 
       <div className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
+        <button className={styles.closeButton} onClick={toggleNavigation}>
+          X
+        </button>
         <NavLink
           to={"/"}
           className={({ isActive }) => (isActive ? styles.active : "")}

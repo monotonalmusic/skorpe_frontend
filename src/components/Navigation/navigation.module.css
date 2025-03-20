@@ -60,13 +60,12 @@
     }
 
     .nav {
-        margin-top: 20vh;
         position: fixed;
         background-color: white;
         top: 0;
         left: 0;
         width: 100vw;
-        height: 80vh;
+        height: 100vh;
         display: none;
         justify-content: center;
         align-items: center;
@@ -76,6 +75,16 @@
         &.open {
             display: flex;
             background-color: #4A4A4A;
+        }
+
+        .closeButton {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            background-color: transparent;
+            border: none;
+            font-size: 40px;
         }
 
         a {

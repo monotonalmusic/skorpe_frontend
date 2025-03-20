@@ -1,73 +1,82 @@
 .dishDetailContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f9f4f1;
-    border-radius: 10px;
-    max-width: 400px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f4f1;
+  border-radius: 10px;
+  max-width: 400px;
 }
 
 .dishImage {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.dishText {
+  background-color: lightgrey;
+  min-width: 100%;
+  padding: 20px;
 }
 
 .dishInfo {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
+  width: 100%;
+  text-align: center;
+  font-family: "Arial", sans-serif;
 }
 
 .dishTitle {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .ingredientsList {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 15px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .ingredientsList li {
-    font-size: 16px;
-    color: #333;
+  font-size: 16px;
+  color: #333;
 }
 
 .sizeSelector {
-    margin-bottom: 15px;
+  padding: 20px;
+  margin-bottom: 15px;
 }
 
 .selectBox {
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-    max-width: 250px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 250px;
 }
 
 .price {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.addToBasket {
-    background-color: #333;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+.addToBasketButton {
+  background-color: #333;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .addToBasket:hover {
-    background-color: #555;
+  background-color: #555;
 }
