@@ -48,17 +48,24 @@
 }
 
 .sizeSelector {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   margin-bottom: 15px;
 }
 
 .selectBox {
+  position: relative;
+  z-index: 1;
+  width: 100%; /* or a fixed width if needed */
+  max-width: 300px; /* adjust as needed */
   padding: 8px;
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  width: 100%;
-  max-width: 250px;
 }
 
 .price {

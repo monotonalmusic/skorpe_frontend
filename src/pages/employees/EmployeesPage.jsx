@@ -5,7 +5,7 @@ const EmployeesPage = () => {
   return (
     <div>
       <div className={styles.employeesTextDiv}>
-        <h1>Personalet</h1>
+        <h1 className={styles.titleText}>Personalet</h1>
         <p>
           Hos Den Glade Skorpe har vi et dedikeret og venligt personale, der
           altid går den ekstra mil for at sikre, at kunderne får den bedste

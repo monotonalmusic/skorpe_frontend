@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useBasket } from "../../context/AppContext";
 import useFetch from "../../hooks/useFetch";
+import Dropdown from "../../components/Dropdown/Dropdown";
 import styles from "./dishdetail.module.css";
 
 const DishDetail = () => {
@@ -39,16 +40,15 @@ const DishDetail = () => {
           </ul>
         </div>
         <div className={styles.sizeSelector}>
-          <label htmlFor="size"><h1>Vælg Størrelse</h1></label>
-          <select
-            id="size"
-            className={styles.selectBox}
-            value={selectedSize}
-            onChange={(e) => setSelectedSize(e.target.value)}
-          >
-            <option value="normal">Almindelig: {dish.price.normal}kr</option>
-            <option value="family">Familie: {dish.price.family}kr</option>
-          </select>
+          <h1>Vælg Størrelse</h1>
+          <Dropdown
+            selected={selectedSize}
+            onSelect={setSelectedSize}
+            options={[
+              { label: `Almindelig: ${dish.price.normal}kr`, value: "normal" },
+              { label: `Familie: ${dish.price.family}kr`, value: "family" },
+            ]}
+          />
         </div>
         <button className={styles.addToBasketButton} onClick={handleAddToBasket}>
           Tilføj {dish.title} til kurven

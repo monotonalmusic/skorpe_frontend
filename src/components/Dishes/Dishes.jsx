@@ -3,7 +3,7 @@ import DishesCard from "../DishesCard/DishesCard";
 import useFetch from "../../hooks/useFetch";
 import styles from "./dishes.module.css";
 
-const Dishes = ({ text }) => {
+const Dishes = () => {
   const {
     data: dishes,
     loading,
@@ -30,7 +30,17 @@ const Dishes = ({ text }) => {
 
   return (
     <div className={styles.dishesContainer}>
-      <h2>{text}</h2>
+      <div className={styles.textDiv}>
+        <h1>Velkommen til den glade skorpe!</h1>
+        <p>
+          Hos os handler det om den perfekte pizza med den sprødeste skorpe. Vi
+          bruger kun de bedste råvarer til både klassiske favoritter og
+          spændende specialiteter som "Parma Drama" og "Rabbit Royale". Uanset
+          om du er til en lille, personlig pizza eller en stor familiedeling, så
+          finder du det hos os. Kom forbi og nyd en pizza lavet med kærlighed,
+          eller bestil den, hent den og nyd den derhjemme!
+        </p>
+      </div>
       <div className={styles.buttonContainer}>
         <div className={styles.allButtonDiv}>
           <button

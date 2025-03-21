@@ -5,17 +5,29 @@
     
 }
 
+.textDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
 .buttonContainer {
     display: flex;
+    background-color: lightgrey;
 }
 
 .sortButton {
+    -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
     color: white;
     background-color: transparent;
     border: none;
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .allButtonDiv {
