@@ -75,7 +75,7 @@ const useDishes = () => {
     formData.append("ingredients", ingredients);
     console.log(ingredients)
     if (image) {
-      formData.append("image", image);
+      formData.append("file", image);
     }
 
     try {
