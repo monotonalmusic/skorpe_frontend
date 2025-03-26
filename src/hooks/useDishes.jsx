@@ -73,6 +73,7 @@ const useDishes = () => {
     formData.append("price", JSON.stringify(price));
     formData.append("category", category);
     formData.append("ingredients", ingredients);
+    console.log(ingredients)
     if (image) {
       formData.append("image", image);
     }

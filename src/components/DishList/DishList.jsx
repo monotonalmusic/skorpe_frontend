@@ -162,7 +162,7 @@ const DishList = () => {
                     className={styles.input}
                   >
                     {availableIngredients.map((ingredient) => (
-                      <option key={ingredient._id} value={ingredient._id}>
+                      <option key={ingredient._id} value={ingredient.name}>
                         {ingredient.name}
                       </option>
                     ))}
